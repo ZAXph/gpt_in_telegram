@@ -23,7 +23,5 @@ def save_text(text, message):
 
 def start_json_file(message):
     data = open_json_file_and_write()
-
     data["users"][message.chat.username] = ""
-
     save_json_file_and_write(data)
